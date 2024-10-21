@@ -1,7 +1,7 @@
 # Getting Started
 
 ### How to use 
-# ./gradlew bootRun
+$ ./gradlew bootRun
 
 # INSERT
 $ curl -X POST -H "Content-Type:application/json" \
