@@ -1,5 +1,28 @@
 # Getting Started
 
+### How to use 
+# ./gradlew bootRun
+
+# INSERT
+$ curl -X POST -H "Content-Type:application/json" \
+-d '{"firstName": "Frodo", "lastName": "Baggins"}' \
+http://localhost:8080/people
+
+# SELECT
+$ curl -X GET http://localhost:8080/people/1
+
+# DELETE
+$ curl -X DELETE http://localhost:8080/people/1
+
+# UPDATE
+$ curl -X PUT -H "Content-Type:application/json" \
+-d '{"firstName": "P Frodo", "lastName": "P Baggins"}' \
+http://localhost:8080/people/2
+
+$ curl -X PATCH -H "Content-Type:application/json" \
+-d '{"firstName": "PATCH Frodo"}' \
+http://localhost:8080/people/2
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
